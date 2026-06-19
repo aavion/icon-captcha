@@ -28,7 +28,7 @@
     },
     "constraints": [
       "Prefer a replacement draw over relaxing category or family balance when enough eligible items remain.",
-      "Allow a documented fallback policy only for very small package-owned asset sets.",
+      "Allow a documented fallback policy only for very small extension-owned asset sets.",
       "Review the families list whenever items are added, removed, or visually restyled."
     ],
     "notes": [

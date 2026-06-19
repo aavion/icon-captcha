@@ -1,19 +1,19 @@
-# Studio uses this manifest to identify, validate, install, and update the package.
-# Replace every placeholder before releasing a package based on this template.
-# PACKAGE_CHANNEL defines the update channel or branch in PACKAGE_SOURCE.
+# Studio uses this manifest to identify, validate, install, and update the extension.
+# Replace every placeholder before releasing an extension based on this template.
+# EXTENSION_CHANNEL defines the update channel or branch in EXTENSION_SOURCE.
 
-##> vendor/package-template manifest ###
-PACKAGE_AUTHOR="Vendor Name"
-PACKAGE_SLUG=package-template
-PACKAGE_NAME="Package Template"
-PACKAGE_DESCRIPTION="Template package for Studio package development"
-PACKAGE_VERSION=0.1.0
-PACKAGE_SCOPE=module
-PACKAGE_DEPENDENCIES=[["system","0.2.6"]]
-PACKAGE_LICENSE=MIT
-PACKAGE_HOMEPAGE=https://example.com
-PACKAGE_IMAGE=assets/preview.svg
-PACKAGE_CHANNEL=main
-PACKAGE_SOURCE=https://example.com/vendor/package-template
-PACKAGE_DATE=2026-06-19
-##< vendor/package-template manifest ###
+##> aavion/icon-captcha manifest ###
+EXTENSION_AUTHOR=Aavion
+EXTENSION_SLUG=icon-captcha
+EXTENSION_NAME=IconCaptcha
+EXTENSION_DESCRIPTION="Visual icon and emoji challenge assets for Studio"
+EXTENSION_VERSION=0.1.0
+EXTENSION_SCOPE=module
+EXTENSION_DEPENDENCIES=[["system","0.2.6"]]
+EXTENSION_LICENSE=MIT
+EXTENSION_HOMEPAGE=https://github.com/aavion/icon-captcha
+EXTENSION_IMAGE=assets/preview.svg
+EXTENSION_CHANNEL=main
+EXTENSION_SOURCE=https://github.com/aavion/icon-captcha
+EXTENSION_DATE=2026-06-19
+##< aavion/icon-captcha manifest ###
