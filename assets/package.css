@@ -1,0 +1,9 @@
+.package-template-surface {
+    display: grid;
+    gap: 1rem;
+}
+
+.package-template-note {
+    border: 1px solid currentColor;
+    padding: 1rem;
+}
