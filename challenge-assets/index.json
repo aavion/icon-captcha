@@ -1,0 +1,1186 @@
+{
+  "schema": "aavion/icon-captcha@0.1.0/challenge-assets.v1",
+  "description": "Curated Noto Emoji and Tabler icon pairs for IconCaptcha challenge generation.",
+  "sources": {
+    "emoji": {
+      "name": "Noto Emoji SVG",
+      "path": "emojis/",
+      "licenseFile": "emojis/LICENSE"
+    },
+    "icons": {
+      "name": "Tabler Icons Filled SVG",
+      "path": "icons/",
+      "licenseFile": "icons/LICENSE"
+    }
+  },
+  "selectionPolicy": {
+    "challengeSize": 6,
+    "pick": "Randomly choose distinct item ids; render one item emoji as the prompt and all six matching icons as choices.",
+    "categoryBalance": {
+      "minCategories": 4,
+      "maxItemsPerCategory": 2,
+      "rationale": "Keep each challenge visually varied without making the target obvious through category isolation or making all choices too similar for humans."
+    },
+    "familyBalance": {
+      "maxItemsPerFamily": 1,
+      "field": "families",
+      "rationale": "Avoid showing two choices from the same visual or semantic near-confusable group in one challenge, even when their broad categories differ."
+    },
+    "constraints": [
+      "Prefer a replacement draw over relaxing category or family balance when enough eligible items remain.",
+      "Allow a documented fallback policy only for very small package-owned asset sets.",
+      "Review the families list whenever items are added, removed, or visually restyled."
+    ],
+    "notes": [
+      "Avoid exposing item ids, labels, filenames, or icon names to the browser during a challenge.",
+      "Rasterize emoji and icons through the same server-side image pipeline before returning a challenge image.",
+      "This source set avoids flags, keycaps, text symbols, skin-tone variants, brands, and highly similar face/person emojis."
+    ]
+  },
+  "itemsCount": 100,
+  "items": [
+    {
+      "id": "apple",
+      "label": "Apple",
+      "category": "food",
+      "emoji": "🍎",
+      "emojiAsset": "emojis/emoji_u1f34e.svg",
+      "icon": "apple",
+      "iconAsset": "icons/apple.svg",
+      "families": [
+        "fruit",
+        "round-food"
+      ]
+    },
+    {
+      "id": "cherries",
+      "label": "Cherries",
+      "category": "food",
+      "emoji": "🍒",
+      "emojiAsset": "emojis/emoji_u1f352.svg",
+      "icon": "cherry",
+      "iconAsset": "icons/cherry.svg",
+      "families": [
+        "fruit"
+      ]
+    },
+    {
+      "id": "lemon",
+      "label": "Lemon",
+      "category": "food",
+      "emoji": "🍋",
+      "emojiAsset": "emojis/emoji_u1f34b.svg",
+      "icon": "lemon-2",
+      "iconAsset": "icons/lemon-2.svg",
+      "families": [
+        "fruit"
+      ]
+    },
+    {
+      "id": "melon",
+      "label": "Melon",
+      "category": "food",
+      "emoji": "🍈",
+      "emojiAsset": "emojis/emoji_u1f348.svg",
+      "icon": "melon",
+      "iconAsset": "icons/melon.svg",
+      "families": [
+        "fruit"
+      ]
+    },
+    {
+      "id": "mushroom",
+      "label": "Mushroom",
+      "category": "food",
+      "emoji": "🍄",
+      "emojiAsset": "emojis/emoji_u1f344.svg",
+      "icon": "mushroom",
+      "iconAsset": "icons/mushroom.svg"
+    },
+    {
+      "id": "pizza",
+      "label": "Pizza",
+      "category": "food",
+      "emoji": "🍕",
+      "emojiAsset": "emojis/emoji_u1f355.svg",
+      "icon": "pizza",
+      "iconAsset": "icons/pizza.svg"
+    },
+    {
+      "id": "bread",
+      "label": "Bread",
+      "category": "food",
+      "emoji": "🍞",
+      "emojiAsset": "emojis/emoji_u1f35e.svg",
+      "icon": "bread",
+      "iconAsset": "icons/bread.svg"
+    },
+    {
+      "id": "cookie",
+      "label": "Cookie",
+      "category": "food",
+      "emoji": "🍪",
+      "emojiAsset": "emojis/emoji_u1f36a.svg",
+      "icon": "cookie",
+      "iconAsset": "icons/cookie.svg",
+      "families": [
+        "round-food"
+      ]
+    },
+    {
+      "id": "egg",
+      "label": "Egg",
+      "category": "food",
+      "emoji": "🥚",
+      "emojiAsset": "emojis/emoji_u1f95a.svg",
+      "icon": "egg",
+      "iconAsset": "icons/egg.svg",
+      "families": [
+        "round-food"
+      ]
+    },
+    {
+      "id": "salad",
+      "label": "Salad",
+      "category": "food",
+      "emoji": "🥗",
+      "emojiAsset": "emojis/emoji_u1f957.svg",
+      "icon": "salad",
+      "iconAsset": "icons/salad.svg",
+      "families": [
+        "bowl-food"
+      ]
+    },
+    {
+      "id": "soup",
+      "label": "Soup",
+      "category": "food",
+      "emoji": "🍲",
+      "emojiAsset": "emojis/emoji_u1f372.svg",
+      "icon": "soup",
+      "iconAsset": "icons/soup.svg",
+      "families": [
+        "bowl-food"
+      ]
+    },
+    {
+      "id": "dumpling",
+      "label": "Dumpling",
+      "category": "food",
+      "emoji": "🥟",
+      "emojiAsset": "emojis/emoji_u1f95f.svg",
+      "icon": "dumpling",
+      "iconAsset": "icons/dumpling.svg",
+      "families": [
+        "bowl-food"
+      ]
+    },
+    {
+      "id": "milk",
+      "label": "Milk",
+      "category": "food",
+      "emoji": "🥛",
+      "emojiAsset": "emojis/emoji_u1f95b.svg",
+      "icon": "milk",
+      "iconAsset": "icons/milk.svg",
+      "families": [
+        "drink-container"
+      ]
+    },
+    {
+      "id": "beer",
+      "label": "Beer",
+      "category": "food",
+      "emoji": "🍺",
+      "emojiAsset": "emojis/emoji_u1f37a.svg",
+      "icon": "beer",
+      "iconAsset": "icons/beer.svg",
+      "families": [
+        "drink-container"
+      ]
+    },
+    {
+      "id": "bottle",
+      "label": "Bottle",
+      "category": "food",
+      "emoji": "🍼",
+      "emojiAsset": "emojis/emoji_u1f37c.svg",
+      "icon": "bottle",
+      "iconAsset": "icons/bottle.svg",
+      "families": [
+        "drink-container"
+      ]
+    },
+    {
+      "id": "sun",
+      "label": "Sun",
+      "category": "nature",
+      "emoji": "☀️",
+      "emojiAsset": "emojis/emoji_u2600.svg",
+      "icon": "sun",
+      "iconAsset": "icons/sun.svg",
+      "families": [
+        "sky-light"
+      ]
+    },
+    {
+      "id": "moon",
+      "label": "Moon",
+      "category": "nature",
+      "emoji": "🌙",
+      "emojiAsset": "emojis/emoji_u1f319.svg",
+      "icon": "moon",
+      "iconAsset": "icons/moon.svg",
+      "families": [
+        "sky-light"
+      ]
+    },
+    {
+      "id": "cloud",
+      "label": "Cloud",
+      "category": "nature",
+      "emoji": "☁️",
+      "emojiAsset": "emojis/emoji_u2601.svg",
+      "icon": "cloud",
+      "iconAsset": "icons/cloud.svg",
+      "families": [
+        "weather-water"
+      ]
+    },
+    {
+      "id": "droplet",
+      "label": "Droplet",
+      "category": "nature",
+      "emoji": "💧",
+      "emojiAsset": "emojis/emoji_u1f4a7.svg",
+      "icon": "droplet",
+      "iconAsset": "icons/droplet.svg",
+      "families": [
+        "round-gem",
+        "weather-water"
+      ]
+    },
+    {
+      "id": "flame",
+      "label": "Flame",
+      "category": "nature",
+      "emoji": "🔥",
+      "emojiAsset": "emojis/emoji_u1f525.svg",
+      "icon": "flame",
+      "iconAsset": "icons/flame.svg",
+      "families": [
+        "danger"
+      ]
+    },
+    {
+      "id": "umbrella",
+      "label": "Umbrella",
+      "category": "nature",
+      "emoji": "☂️",
+      "emojiAsset": "emojis/emoji_u2602.svg",
+      "icon": "umbrella",
+      "iconAsset": "icons/umbrella.svg",
+      "families": [
+        "weather-water"
+      ]
+    },
+    {
+      "id": "leaf",
+      "label": "Leaf",
+      "category": "nature",
+      "emoji": "🍃",
+      "emojiAsset": "emojis/emoji_u1f343.svg",
+      "icon": "leaf",
+      "iconAsset": "icons/leaf.svg",
+      "families": [
+        "plants"
+      ]
+    },
+    {
+      "id": "seedling",
+      "label": "Seedling",
+      "category": "nature",
+      "emoji": "🌱",
+      "emojiAsset": "emojis/emoji_u1f331.svg",
+      "icon": "seedling",
+      "iconAsset": "icons/seedling.svg",
+      "families": [
+        "plants"
+      ]
+    },
+    {
+      "id": "flower",
+      "label": "Flower",
+      "category": "nature",
+      "emoji": "🌼",
+      "emojiAsset": "emojis/emoji_u1f33c.svg",
+      "icon": "flower",
+      "iconAsset": "icons/flower.svg",
+      "families": [
+        "plants"
+      ]
+    },
+    {
+      "id": "cactus",
+      "label": "Cactus",
+      "category": "nature",
+      "emoji": "🌵",
+      "emojiAsset": "emojis/emoji_u1f335.svg",
+      "icon": "cactus",
+      "iconAsset": "icons/cactus.svg",
+      "families": [
+        "plants"
+      ]
+    },
+    {
+      "id": "clover",
+      "label": "Clover",
+      "category": "nature",
+      "emoji": "🍀",
+      "emojiAsset": "emojis/emoji_u1f340.svg",
+      "icon": "clover",
+      "iconAsset": "icons/clover.svg",
+      "families": [
+        "plants"
+      ]
+    },
+    {
+      "id": "butterfly",
+      "label": "Butterfly",
+      "category": "animal",
+      "emoji": "🦋",
+      "emojiAsset": "emojis/emoji_u1f98b.svg",
+      "icon": "butterfly",
+      "iconAsset": "icons/butterfly.svg",
+      "families": [
+        "small-creature"
+      ]
+    },
+    {
+      "id": "bug",
+      "label": "Bug",
+      "category": "animal",
+      "emoji": "🐛",
+      "emojiAsset": "emojis/emoji_u1f41b.svg",
+      "icon": "bug",
+      "iconAsset": "icons/bug.svg",
+      "families": [
+        "small-creature"
+      ]
+    },
+    {
+      "id": "spider",
+      "label": "Spider",
+      "category": "animal",
+      "emoji": "🕷️",
+      "emojiAsset": "emojis/emoji_u1f577.svg",
+      "icon": "spider",
+      "iconAsset": "icons/spider.svg",
+      "families": [
+        "small-creature"
+      ]
+    },
+    {
+      "id": "pig",
+      "label": "Pig",
+      "category": "animal",
+      "emoji": "🐷",
+      "emojiAsset": "emojis/emoji_u1f437.svg",
+      "icon": "pig",
+      "iconAsset": "icons/pig.svg"
+    },
+    {
+      "id": "paw",
+      "label": "Paw",
+      "category": "animal",
+      "emoji": "🐾",
+      "emojiAsset": "emojis/emoji_u1f43e.svg",
+      "icon": "paw",
+      "iconAsset": "icons/paw.svg"
+    },
+    {
+      "id": "bone",
+      "label": "Bone",
+      "category": "animal",
+      "emoji": "🦴",
+      "emojiAsset": "emojis/emoji_u1f9b4.svg",
+      "icon": "bone",
+      "iconAsset": "icons/bone.svg"
+    },
+    {
+      "id": "gift",
+      "label": "Gift",
+      "category": "object",
+      "emoji": "🎁",
+      "emojiAsset": "emojis/emoji_u1f381.svg",
+      "icon": "gift",
+      "iconAsset": "icons/gift.svg",
+      "families": [
+        "celebration"
+      ]
+    },
+    {
+      "id": "balloon",
+      "label": "Balloon",
+      "category": "object",
+      "emoji": "🎈",
+      "emojiAsset": "emojis/emoji_u1f388.svg",
+      "icon": "balloon",
+      "iconAsset": "icons/balloon.svg",
+      "families": [
+        "celebration"
+      ]
+    },
+    {
+      "id": "confetti",
+      "label": "Confetti",
+      "category": "object",
+      "emoji": "🎉",
+      "emojiAsset": "emojis/emoji_u1f389.svg",
+      "icon": "confetti",
+      "iconAsset": "icons/confetti.svg",
+      "families": [
+        "celebration"
+      ]
+    },
+    {
+      "id": "christmas-tree",
+      "label": "Christmas Tree",
+      "category": "object",
+      "emoji": "🎄",
+      "emojiAsset": "emojis/emoji_u1f384.svg",
+      "icon": "christmas-tree",
+      "iconAsset": "icons/christmas-tree.svg",
+      "families": [
+        "celebration"
+      ]
+    },
+    {
+      "id": "sparkles",
+      "label": "Sparkles",
+      "category": "object",
+      "emoji": "✨",
+      "emojiAsset": "emojis/emoji_u2728.svg",
+      "icon": "sparkles",
+      "iconAsset": "icons/sparkles.svg",
+      "families": [
+        "sky-light"
+      ]
+    },
+    {
+      "id": "crown",
+      "label": "Crown",
+      "category": "object",
+      "emoji": "👑",
+      "emojiAsset": "emojis/emoji_u1f451.svg",
+      "icon": "crown",
+      "iconAsset": "icons/crown.svg",
+      "families": [
+        "award-status"
+      ]
+    },
+    {
+      "id": "trophy",
+      "label": "Trophy",
+      "category": "object",
+      "emoji": "🏆",
+      "emojiAsset": "emojis/emoji_u1f3c6.svg",
+      "icon": "trophy",
+      "iconAsset": "icons/trophy.svg",
+      "families": [
+        "award-status"
+      ]
+    },
+    {
+      "id": "heart",
+      "label": "Heart",
+      "category": "object",
+      "emoji": "❤️",
+      "emojiAsset": "emojis/emoji_u2764.svg",
+      "icon": "heart",
+      "iconAsset": "icons/heart.svg",
+      "families": [
+        "heart-shape"
+      ]
+    },
+    {
+      "id": "broken-heart",
+      "label": "Broken Heart",
+      "category": "object",
+      "emoji": "💔",
+      "emojiAsset": "emojis/emoji_u1f494.svg",
+      "icon": "heart-broken",
+      "iconAsset": "icons/heart-broken.svg",
+      "families": [
+        "heart-shape"
+      ]
+    },
+    {
+      "id": "key",
+      "label": "Key",
+      "category": "object",
+      "emoji": "🔑",
+      "emojiAsset": "emojis/emoji_u1f511.svg",
+      "icon": "key",
+      "iconAsset": "icons/key.svg",
+      "families": [
+        "security"
+      ]
+    },
+    {
+      "id": "lock",
+      "label": "Lock",
+      "category": "object",
+      "emoji": "🔒",
+      "emojiAsset": "emojis/emoji_u1f512.svg",
+      "icon": "lock",
+      "iconAsset": "icons/lock.svg",
+      "families": [
+        "security"
+      ]
+    },
+    {
+      "id": "bell",
+      "label": "Bell",
+      "category": "object",
+      "emoji": "🔔",
+      "emojiAsset": "emojis/emoji_u1f514.svg",
+      "icon": "bell",
+      "iconAsset": "icons/bell.svg",
+      "families": [
+        "time-alert"
+      ]
+    },
+    {
+      "id": "alarm",
+      "label": "Alarm Clock",
+      "category": "object",
+      "emoji": "⏰",
+      "emojiAsset": "emojis/emoji_u23f0.svg",
+      "icon": "alarm",
+      "iconAsset": "icons/alarm.svg",
+      "families": [
+        "time-alert"
+      ]
+    },
+    {
+      "id": "hourglass",
+      "label": "Hourglass",
+      "category": "object",
+      "emoji": "⌛",
+      "emojiAsset": "emojis/emoji_u231b.svg",
+      "icon": "hourglass",
+      "iconAsset": "icons/hourglass.svg",
+      "families": [
+        "time-alert"
+      ]
+    },
+    {
+      "id": "magnet",
+      "label": "Magnet",
+      "category": "object",
+      "emoji": "🧲",
+      "emojiAsset": "emojis/emoji_u1f9f2.svg",
+      "icon": "magnet",
+      "iconAsset": "icons/magnet.svg"
+    },
+    {
+      "id": "battery",
+      "label": "Battery",
+      "category": "object",
+      "emoji": "🔋",
+      "emojiAsset": "emojis/emoji_u1f50b.svg",
+      "icon": "battery",
+      "iconAsset": "icons/battery.svg"
+    },
+    {
+      "id": "light-bulb",
+      "label": "Light Bulb",
+      "category": "object",
+      "emoji": "💡",
+      "emojiAsset": "emojis/emoji_u1f4a1.svg",
+      "icon": "bulb",
+      "iconAsset": "icons/bulb.svg"
+    },
+    {
+      "id": "camera",
+      "label": "Camera",
+      "category": "object",
+      "emoji": "📷",
+      "emojiAsset": "emojis/emoji_u1f4f7.svg",
+      "icon": "camera",
+      "iconAsset": "icons/camera.svg"
+    },
+    {
+      "id": "headphones",
+      "label": "Headphones",
+      "category": "object",
+      "emoji": "🎧",
+      "emojiAsset": "emojis/emoji_u1f3a7.svg",
+      "icon": "headphones",
+      "iconAsset": "icons/headphones.svg",
+      "families": [
+        "audio"
+      ]
+    },
+    {
+      "id": "microphone",
+      "label": "Microphone",
+      "category": "object",
+      "emoji": "🎤",
+      "emojiAsset": "emojis/emoji_u1f3a4.svg",
+      "icon": "microphone",
+      "iconAsset": "icons/microphone.svg",
+      "families": [
+        "audio"
+      ]
+    },
+    {
+      "id": "gamepad",
+      "label": "Gamepad",
+      "category": "object",
+      "emoji": "🎮",
+      "emojiAsset": "emojis/emoji_u1f3ae.svg",
+      "icon": "device-gamepad",
+      "iconAsset": "icons/device-gamepad.svg",
+      "families": [
+        "game-play"
+      ]
+    },
+    {
+      "id": "dice",
+      "label": "Dice",
+      "category": "object",
+      "emoji": "🎲",
+      "emojiAsset": "emojis/emoji_u1f3b2.svg",
+      "icon": "dice",
+      "iconAsset": "icons/dice.svg",
+      "families": [
+        "game-play"
+      ]
+    },
+    {
+      "id": "sunglasses",
+      "label": "Sunglasses",
+      "category": "object",
+      "emoji": "🕶️",
+      "emojiAsset": "emojis/emoji_u1f576.svg",
+      "icon": "sunglasses",
+      "iconAsset": "icons/sunglasses.svg"
+    },
+    {
+      "id": "candle",
+      "label": "Candle",
+      "category": "object",
+      "emoji": "🕯️",
+      "emojiAsset": "emojis/emoji_u1f56f.svg",
+      "icon": "candle",
+      "iconAsset": "icons/candle.svg"
+    },
+    {
+      "id": "bowling",
+      "label": "Bowling",
+      "category": "object",
+      "emoji": "🎳",
+      "emojiAsset": "emojis/emoji_u1f3b3.svg",
+      "icon": "ball-bowling",
+      "iconAsset": "icons/ball-bowling.svg",
+      "families": [
+        "game-play",
+        "round-food"
+      ]
+    },
+    {
+      "id": "puzzle",
+      "label": "Puzzle",
+      "category": "object",
+      "emoji": "🧩",
+      "emojiAsset": "emojis/emoji_u1f9e9.svg",
+      "icon": "puzzle",
+      "iconAsset": "icons/puzzle.svg",
+      "families": [
+        "game-play"
+      ]
+    },
+    {
+      "id": "palette",
+      "label": "Palette",
+      "category": "object",
+      "emoji": "🎨",
+      "emojiAsset": "emojis/emoji_u1f3a8.svg",
+      "icon": "palette",
+      "iconAsset": "icons/palette.svg"
+    },
+    {
+      "id": "book",
+      "label": "Book",
+      "category": "object",
+      "emoji": "📖",
+      "emojiAsset": "emojis/emoji_u1f4d6.svg",
+      "icon": "book",
+      "iconAsset": "icons/book.svg",
+      "families": [
+        "reading-writing"
+      ]
+    },
+    {
+      "id": "bookmark",
+      "label": "Bookmark",
+      "category": "object",
+      "emoji": "🔖",
+      "emojiAsset": "emojis/emoji_u1f516.svg",
+      "icon": "bookmark",
+      "iconAsset": "icons/bookmark.svg",
+      "families": [
+        "reading-writing"
+      ]
+    },
+    {
+      "id": "pencil",
+      "label": "Pencil",
+      "category": "object",
+      "emoji": "✏️",
+      "emojiAsset": "emojis/emoji_u270f.svg",
+      "icon": "pencil",
+      "iconAsset": "icons/pencil.svg",
+      "families": [
+        "reading-writing"
+      ]
+    },
+    {
+      "id": "clipboard",
+      "label": "Clipboard",
+      "category": "object",
+      "emoji": "📋",
+      "emojiAsset": "emojis/emoji_u1f4cb.svg",
+      "icon": "clipboard",
+      "iconAsset": "icons/clipboard.svg",
+      "families": [
+        "reading-writing"
+      ]
+    },
+    {
+      "id": "mail",
+      "label": "Mail",
+      "category": "object",
+      "emoji": "✉️",
+      "emojiAsset": "emojis/emoji_u2709.svg",
+      "icon": "mail",
+      "iconAsset": "icons/mail.svg",
+      "families": [
+        "reading-writing"
+      ]
+    },
+    {
+      "id": "phone",
+      "label": "Phone",
+      "category": "object",
+      "emoji": "☎️",
+      "emojiAsset": "emojis/emoji_u260e.svg",
+      "icon": "phone",
+      "iconAsset": "icons/phone.svg"
+    },
+    {
+      "id": "briefcase",
+      "label": "Briefcase",
+      "category": "object",
+      "emoji": "💼",
+      "emojiAsset": "emojis/emoji_u1f4bc.svg",
+      "icon": "briefcase",
+      "iconAsset": "icons/briefcase.svg"
+    },
+    {
+      "id": "credit-card",
+      "label": "Credit Card",
+      "category": "object",
+      "emoji": "💳",
+      "emojiAsset": "emojis/emoji_u1f4b3.svg",
+      "icon": "credit-card",
+      "iconAsset": "icons/credit-card.svg"
+    },
+    {
+      "id": "shopping-cart",
+      "label": "Shopping Cart",
+      "category": "object",
+      "emoji": "🛒",
+      "emojiAsset": "emojis/emoji_u1f6d2.svg",
+      "icon": "shopping-cart",
+      "iconAsset": "icons/shopping-cart.svg"
+    },
+    {
+      "id": "pill",
+      "label": "Pill",
+      "category": "object",
+      "emoji": "💊",
+      "emojiAsset": "emojis/emoji_u1f48a.svg",
+      "icon": "pill",
+      "iconAsset": "icons/pill.svg",
+      "families": [
+        "science-medical"
+      ]
+    },
+    {
+      "id": "microscope",
+      "label": "Microscope",
+      "category": "object",
+      "emoji": "🔬",
+      "emojiAsset": "emojis/emoji_u1f52c.svg",
+      "icon": "microscope",
+      "iconAsset": "icons/microscope.svg",
+      "families": [
+        "science-medical"
+      ]
+    },
+    {
+      "id": "test-tube",
+      "label": "Test Tube",
+      "category": "object",
+      "emoji": "🧪",
+      "emojiAsset": "emojis/emoji_u1f9ea.svg",
+      "icon": "test-pipe-2",
+      "iconAsset": "icons/test-pipe-2.svg",
+      "families": [
+        "science-medical"
+      ]
+    },
+    {
+      "id": "compass",
+      "label": "Compass",
+      "category": "object",
+      "emoji": "🧭",
+      "emojiAsset": "emojis/emoji_u1f9ed.svg",
+      "icon": "compass",
+      "iconAsset": "icons/compass.svg",
+      "families": [
+        "navigation-marker"
+      ]
+    },
+    {
+      "id": "map-pin",
+      "label": "Map Pin",
+      "category": "object",
+      "emoji": "📍",
+      "emojiAsset": "emojis/emoji_u1f4cd.svg",
+      "icon": "map-pin",
+      "iconAsset": "icons/map-pin.svg",
+      "families": [
+        "navigation-marker"
+      ]
+    },
+    {
+      "id": "flag",
+      "label": "Flag",
+      "category": "object",
+      "emoji": "🚩",
+      "emojiAsset": "emojis/emoji_u1f6a9.svg",
+      "icon": "flag",
+      "iconAsset": "icons/flag.svg",
+      "families": [
+        "navigation-marker"
+      ]
+    },
+    {
+      "id": "ticket",
+      "label": "Ticket",
+      "category": "object",
+      "emoji": "🎟️",
+      "emojiAsset": "emojis/emoji_u1f39f.svg",
+      "icon": "ticket",
+      "iconAsset": "icons/ticket.svg"
+    },
+    {
+      "id": "diamond",
+      "label": "Diamond",
+      "category": "object",
+      "emoji": "💎",
+      "emojiAsset": "emojis/emoji_u1f48e.svg",
+      "icon": "diamond",
+      "iconAsset": "icons/diamond.svg",
+      "families": [
+        "round-gem"
+      ]
+    },
+    {
+      "id": "home",
+      "label": "Home",
+      "category": "place",
+      "emoji": "🏠",
+      "emojiAsset": "emojis/emoji_u1f3e0.svg",
+      "icon": "home",
+      "iconAsset": "icons/home.svg",
+      "families": [
+        "building-place"
+      ]
+    },
+    {
+      "id": "school",
+      "label": "School",
+      "category": "place",
+      "emoji": "🏫",
+      "emojiAsset": "emojis/emoji_u1f3eb.svg",
+      "icon": "school",
+      "iconAsset": "icons/school.svg",
+      "families": [
+        "building-place"
+      ]
+    },
+    {
+      "id": "bed",
+      "label": "Bed",
+      "category": "place",
+      "emoji": "🛏️",
+      "emojiAsset": "emojis/emoji_u1f6cf.svg",
+      "icon": "bed",
+      "iconAsset": "icons/bed.svg",
+      "families": [
+        "rest-room"
+      ]
+    },
+    {
+      "id": "bath",
+      "label": "Bath",
+      "category": "place",
+      "emoji": "🛁",
+      "emojiAsset": "emojis/emoji_u1f6c1.svg",
+      "icon": "bath",
+      "iconAsset": "icons/bath.svg",
+      "families": [
+        "rest-room"
+      ]
+    },
+    {
+      "id": "bus",
+      "label": "Bus",
+      "category": "transport",
+      "emoji": "🚌",
+      "emojiAsset": "emojis/emoji_u1f68c.svg",
+      "icon": "bus",
+      "iconAsset": "icons/bus.svg",
+      "families": [
+        "road-vehicle"
+      ]
+    },
+    {
+      "id": "car",
+      "label": "Car",
+      "category": "transport",
+      "emoji": "🚗",
+      "emojiAsset": "emojis/emoji_u1f697.svg",
+      "icon": "car",
+      "iconAsset": "icons/car.svg",
+      "families": [
+        "road-vehicle"
+      ]
+    },
+    {
+      "id": "truck",
+      "label": "Truck",
+      "category": "transport",
+      "emoji": "🚚",
+      "emojiAsset": "emojis/emoji_u1f69a.svg",
+      "icon": "truck",
+      "iconAsset": "icons/truck.svg",
+      "families": [
+        "road-vehicle"
+      ]
+    },
+    {
+      "id": "bike",
+      "label": "Bike",
+      "category": "transport",
+      "emoji": "🚲",
+      "emojiAsset": "emojis/emoji_u1f6b2.svg",
+      "icon": "bike",
+      "iconAsset": "icons/bike.svg",
+      "families": [
+        "two-wheel-vehicle"
+      ]
+    },
+    {
+      "id": "motorbike",
+      "label": "Motorbike",
+      "category": "transport",
+      "emoji": "🏍️",
+      "emojiAsset": "emojis/emoji_u1f3cd.svg",
+      "icon": "motorbike",
+      "iconAsset": "icons/motorbike.svg",
+      "families": [
+        "two-wheel-vehicle"
+      ]
+    },
+    {
+      "id": "train",
+      "label": "Train",
+      "category": "transport",
+      "emoji": "🚆",
+      "emojiAsset": "emojis/emoji_u1f686.svg",
+      "icon": "train",
+      "iconAsset": "icons/train.svg",
+      "families": [
+        "road-vehicle"
+      ]
+    },
+    {
+      "id": "plane",
+      "label": "Plane",
+      "category": "transport",
+      "emoji": "✈️",
+      "emojiAsset": "emojis/emoji_u2708.svg",
+      "icon": "plane",
+      "iconAsset": "icons/plane.svg",
+      "families": [
+        "air-space-vehicle"
+      ]
+    },
+    {
+      "id": "helicopter",
+      "label": "Helicopter",
+      "category": "transport",
+      "emoji": "🚁",
+      "emojiAsset": "emojis/emoji_u1f681.svg",
+      "icon": "helicopter",
+      "iconAsset": "icons/helicopter.svg",
+      "families": [
+        "air-space-vehicle"
+      ]
+    },
+    {
+      "id": "ferry",
+      "label": "Ferry",
+      "category": "transport",
+      "emoji": "⛴️",
+      "emojiAsset": "emojis/emoji_u26f4.svg",
+      "icon": "ferry",
+      "iconAsset": "icons/ferry.svg"
+    },
+    {
+      "id": "satellite",
+      "label": "Satellite",
+      "category": "transport",
+      "emoji": "🛰️",
+      "emojiAsset": "emojis/emoji_u1f6f0.svg",
+      "icon": "satellite",
+      "iconAsset": "icons/satellite.svg",
+      "families": [
+        "air-space-vehicle"
+      ]
+    },
+    {
+      "id": "mountain",
+      "label": "Mountain",
+      "category": "place",
+      "emoji": "⛰️",
+      "emojiAsset": "emojis/emoji_u26f0.svg",
+      "icon": "mountain",
+      "iconAsset": "icons/mountain.svg"
+    },
+    {
+      "id": "world",
+      "label": "World",
+      "category": "place",
+      "emoji": "🌍",
+      "emojiAsset": "emojis/emoji_u1f30d.svg",
+      "icon": "world",
+      "iconAsset": "icons/world.svg",
+      "families": [
+        "navigation-marker"
+      ]
+    },
+    {
+      "id": "ghost",
+      "label": "Ghost",
+      "category": "symbol",
+      "emoji": "👻",
+      "emojiAsset": "emojis/emoji_u1f47b.svg",
+      "icon": "ghost",
+      "iconAsset": "icons/ghost.svg",
+      "families": [
+        "strange-character"
+      ]
+    },
+    {
+      "id": "alien",
+      "label": "Alien",
+      "category": "symbol",
+      "emoji": "👽",
+      "emojiAsset": "emojis/emoji_u1f47d.svg",
+      "icon": "alien",
+      "iconAsset": "icons/alien.svg",
+      "families": [
+        "strange-character"
+      ]
+    },
+    {
+      "id": "ufo",
+      "label": "UFO",
+      "category": "symbol",
+      "emoji": "🛸",
+      "emojiAsset": "emojis/emoji_u1f6f8.svg",
+      "icon": "ufo",
+      "iconAsset": "icons/ufo.svg",
+      "families": [
+        "air-space-vehicle",
+        "strange-character"
+      ]
+    },
+    {
+      "id": "poo",
+      "label": "Poo",
+      "category": "symbol",
+      "emoji": "💩",
+      "emojiAsset": "emojis/emoji_u1f4a9.svg",
+      "icon": "poo",
+      "iconAsset": "icons/poo.svg",
+      "families": [
+        "strange-character"
+      ]
+    },
+    {
+      "id": "bomb",
+      "label": "Bomb",
+      "category": "symbol",
+      "emoji": "💣",
+      "emojiAsset": "emojis/emoji_u1f4a3.svg",
+      "icon": "bomb",
+      "iconAsset": "icons/bomb.svg",
+      "families": [
+        "danger"
+      ]
+    },
+    {
+      "id": "shield",
+      "label": "Shield",
+      "category": "symbol",
+      "emoji": "🛡️",
+      "emojiAsset": "emojis/emoji_u1f6e1.svg",
+      "icon": "shield",
+      "iconAsset": "icons/shield.svg",
+      "families": [
+        "danger",
+        "security"
+      ]
+    },
+    {
+      "id": "yin-yang",
+      "label": "Yin Yang",
+      "category": "symbol",
+      "emoji": "☯️",
+      "emojiAsset": "emojis/emoji_u262f.svg",
+      "icon": "yin-yang",
+      "iconAsset": "icons/yin-yang.svg"
+    },
+    {
+      "id": "star",
+      "label": "Star",
+      "category": "symbol",
+      "emoji": "⭐",
+      "emojiAsset": "emojis/emoji_u2b50.svg",
+      "icon": "star",
+      "iconAsset": "icons/star.svg",
+      "families": [
+        "award-status",
+        "sky-light"
+      ]
+    }
+  ]
+}
