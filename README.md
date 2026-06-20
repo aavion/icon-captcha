@@ -1,7 +1,7 @@
 # IconCaptcha
 
-> **Status:** Early extension package  
-> **Studio dependency:** `system >= 0.2.6`  
+> **Status:** Active development  
+> **Studio dependency:** `>= 0.2.6`  
 > **Scope:** `captcha-provider`
 
 IconCaptcha is planned as a visual captcha provider for Studio. The idea is simple: Studio shows a small image challenge, the visitor matches an emoji prompt with the right icon, and the server validates the answer without exposing the solution in browser-readable data.
